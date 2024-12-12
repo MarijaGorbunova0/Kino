@@ -44,6 +44,7 @@
             this.Kava_btn.TabIndex = 0;
             this.Kava_btn.Text = "Kava";
             this.Kava_btn.UseVisualStyleBackColor = false;
+            this.Kava_btn.Click += new System.EventHandler(this.Kava_btn_Click);
             // 
             // OstaPilet_btn
             // 
@@ -65,7 +66,6 @@
             this.LogiSisse_btn.TabIndex = 2;
             this.LogiSisse_btn.Text = "Logi sisse";
             this.LogiSisse_btn.UseVisualStyleBackColor = false;
-            this.LogiSisse_btn.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
