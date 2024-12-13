@@ -55,6 +55,7 @@
             this.OstaPilet_btn.TabIndex = 1;
             this.OstaPilet_btn.Text = "Osta pilet";
             this.OstaPilet_btn.UseVisualStyleBackColor = false;
+            this.OstaPilet_btn.Click += new System.EventHandler(this.OstaPilet_btn_Click);
             // 
             // LogiSisse_btn
             // 
@@ -66,6 +67,7 @@
             this.LogiSisse_btn.TabIndex = 2;
             this.LogiSisse_btn.Text = "Logi sisse";
             this.LogiSisse_btn.UseVisualStyleBackColor = false;
+            this.LogiSisse_btn.Click += new System.EventHandler(this.LogiSisse_btn_Click);
             // 
             // pictureBox1
             // 
@@ -87,6 +89,7 @@
             this.Controls.Add(this.Kava_btn);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

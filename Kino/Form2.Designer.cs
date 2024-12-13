@@ -36,6 +36,7 @@
             this.nimi_lb = new System.Windows.Forms.Label();
             this.aasta_lb = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.UuendaFilm_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,12 +63,13 @@
             // KustutaFilm_btn
             // 
             this.KustutaFilm_btn.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.KustutaFilm_btn.Location = new System.Drawing.Point(683, 254);
+            this.KustutaFilm_btn.Location = new System.Drawing.Point(683, 273);
             this.KustutaFilm_btn.Name = "KustutaFilm_btn";
             this.KustutaFilm_btn.Size = new System.Drawing.Size(75, 23);
             this.KustutaFilm_btn.TabIndex = 2;
             this.KustutaFilm_btn.Text = "Kustuta";
             this.KustutaFilm_btn.UseVisualStyleBackColor = false;
+            this.KustutaFilm_btn.Click += new System.EventHandler(this.KustutaFilm_btn_Click);
             // 
             // Aasta_txb
             // 
@@ -111,12 +113,24 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // UuendaFilm_btn
+            // 
+            this.UuendaFilm_btn.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.UuendaFilm_btn.Location = new System.Drawing.Point(683, 244);
+            this.UuendaFilm_btn.Name = "UuendaFilm_btn";
+            this.UuendaFilm_btn.Size = new System.Drawing.Size(75, 23);
+            this.UuendaFilm_btn.TabIndex = 10;
+            this.UuendaFilm_btn.Text = "Uuenda";
+            this.UuendaFilm_btn.UseVisualStyleBackColor = false;
+            this.UuendaFilm_btn.Click += new System.EventHandler(this.UuendaFilm_btn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.UuendaFilm_btn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.aasta_lb);
             this.Controls.Add(this.nimi_lb);
@@ -128,6 +142,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form2";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -145,5 +160,6 @@
         private System.Windows.Forms.Label nimi_lb;
         private System.Windows.Forms.Label aasta_lb;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button UuendaFilm_btn;
     }
 }

@@ -12,17 +12,41 @@ namespace Kino
 {
     public partial class Form1 : Form
     {
+        public bool login = false;
         public Form1()
         {
             InitializeComponent();
   
         }
 
-
         private void Kava_btn_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             form2.Show();
+        }
+
+        private void LogiSisse_btn_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+        }
+
+
+        private void OstaPilet_btn_Click(object sender, EventArgs e)
+        {
+            if (login == false)
+            {
+                MessageBox.Show("logi sisse selleks et osta pilet");
+            }
+            else
+            {
+                MessageBox.Show("koik on hasti");
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
