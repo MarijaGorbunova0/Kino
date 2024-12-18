@@ -12,11 +12,14 @@ namespace Kino
 {
     public partial class Form1 : Form
     {
-        public bool login = false;
+        public static bool login = false;
+   
         public Form1()
         {
             InitializeComponent();
-  
+            if (login == true) {
+                LogiSisse_btn.Text = "logi välja";
+            }
         }
 
         private void Kava_btn_Click(object sender, EventArgs e)
@@ -27,8 +30,15 @@ namespace Kino
 
         private void LogiSisse_btn_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
+            if(login == false)
+            {
+                Form3 form3 = new Form3();
+                form3.Show();
+            }
+            else
+            {
+                login = false;
+            }
         }
 
 
@@ -41,6 +51,8 @@ namespace Kino
             else
             {
                 MessageBox.Show("koik on hasti");
+                Form4 form4 = new Form4();
+                form4.Show();
             }
         }
 

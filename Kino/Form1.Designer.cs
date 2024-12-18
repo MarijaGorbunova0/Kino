@@ -32,6 +32,7 @@
             this.OstaPilet_btn = new System.Windows.Forms.Button();
             this.LogiSisse_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Kasutajanimi_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,12 +78,22 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // Kasutajanimi_lbl
+            // 
+            this.Kasutajanimi_lbl.AutoSize = true;
+            this.Kasutajanimi_lbl.Location = new System.Drawing.Point(583, 37);
+            this.Kasutajanimi_lbl.Name = "Kasutajanimi_lbl";
+            this.Kasutajanimi_lbl.Size = new System.Drawing.Size(65, 13);
+            this.Kasutajanimi_lbl.TabIndex = 4;
+            this.Kasutajanimi_lbl.Text = "kasutajanimi";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Kasutajanimi_lbl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.LogiSisse_btn);
             this.Controls.Add(this.OstaPilet_btn);
@@ -92,6 +103,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,8 +111,9 @@
 
         private System.Windows.Forms.Button Kava_btn;
         private System.Windows.Forms.Button OstaPilet_btn;
-        private System.Windows.Forms.Button LogiSisse_btn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Kasutajanimi_lbl;
+        public System.Windows.Forms.Button LogiSisse_btn;
     }
 }
 

@@ -16,12 +16,13 @@ namespace Kino
         public SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=KinoDatabase;");
         SqlCommand cmd;
         SqlDataAdapter adapter;
-        Form1 login;
+        public Form1 form1;
+
         public Form3()
         {
             InitializeComponent();
         }
-        private void LoginControl()
+       public void LoginControl()
         {
             try
 
@@ -42,15 +43,15 @@ namespace Kino
 
                         if (GetUsernimi == "admin" && storedPassword.ToString() == GetUserparool)
                         {
-                            MessageBox.Show("Edukalt");
                             Form2 form2 = new Form2();
                             form2.Show();
+                            Form1.login = true;
                         }
                         else if(storedPassword != null && storedPassword.ToString() == GetUserparool)
                         {
                             MessageBox.Show("Edukalt kasutaja");
-                            Form4 form4 = new Form4();
-                            form4.Show();
+                            Form1.login = true;
+                            form1.LogiSisse_btn.Text = "logi välja";
                         }
                         else
                         {
